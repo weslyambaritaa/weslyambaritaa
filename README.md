@@ -19,5 +19,3 @@ My [linkedin](https://www.linkedin.com/in/wesly-ambarita-056ab7285/)
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
 
 ![Snake Game](./dist/snake.svg)
-![Snake Game](./dist/snake.svg)
-![Snake Game](./dist/snake.svg)
