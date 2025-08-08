@@ -2,25 +2,25 @@ name: generate snake game
 
 on:
   schedule:
-    - cron: "0 */6 * * *" # jalan setiap 6 jam
-  workflow_dispatch: # biar bisa dijalankan manual
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      # Step 2: Generate Snake Game
+      - name: Create dist directory
+        run: mkdir -p dist
+
       - name: Generate Snake
-        uses: Platane/snk@v3
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: weslyambaritaa
           outputs: dist/snake.svg
 
-      # Step 3: Commit and push changes
       - name: Commit and push changes
         run: |
           git config --global user.name "github-actions[bot]"
