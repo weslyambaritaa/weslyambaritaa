@@ -20,3 +20,4 @@ My [linkedin](https://www.linkedin.com/in/wesly-ambarita-056ab7285/)
 
 ![Snake Game](./dist/snake.svg)
 ![Snake Game](./dist/snake.svg)
+![Snake Game](./dist/snake.svg)
